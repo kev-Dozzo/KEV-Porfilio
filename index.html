@@ -1,372 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Port folio</title>
+    <meta name="description" content="Kevin's Portfolio — FullStack Developer, UI/UX Designer & Content Creator">
+    <meta name="author" content="Kevin Enka">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Kevin | FullStack Developer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
-
-   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body>
-    <nav id="home" class="navbar">
-        <div class="nav-container">
-            <div id="nav-logo" >
 
-                <a href="#home">
-                    <i class="fa-solid fa-code"></i>
-                    Enka-Dev
-                </a>
+    <!-- ======================== NAVBAR ======================== -->
+    <header>
+        <nav id="home" class="navbar">
+            <div class="nav-container">
+
+                <div id="nav-logo">
+                    <a href="#home">
+                        <i class="fa-solid fa-code"></i>
+                        Enka-Dev
+                    </a>
+                </div>
+
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="navbar_links">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="navbar_links">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#service" class="navbar_links">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skill" class="navbar_links">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="navbar_links">Portfolio</a>
+                    </li>
+                    <!-- 🌙 Dark / Light Mode Toggle -->
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="#contact" class="btn">Contact Me</a>
+                    </li>
+                </ul>
+
             </div>
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+        </nav>
+    </header>
 
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="/" class="navbar_links">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="navbar_links">About Us</a>
-                </li >
-                <li class="nav-item">
-                    <a href="#service" class="navbar_links">Service</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skill" class="navbar_links">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#project" class="navbar_links">PortFolio</a>
-                </li>
-                <li class="nav-btn">
-                    <a href="#contact" class="btn">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="main">
-        <div class="">
+    <!-- ======================== HERO SECTION ======================== -->
+    <main>
+        <div class="main">
             <div class="main-container">
-                <div class="main-content">
+                <div class="main-content reveal">
                     <h1>Yo, it's <span>Kevin</span></h1>
                     <h2>I'm a <span id="carrousel"></span></h2>
-                    <div class="">
-                        <p class="content">
-                            I am a FullStack developer, Content Creator and designer.
-                            Actually Schooling at IUT University of Douala
-                            Studing Computer Engineering. With my Skills i aim to offer
-                            the best of me on each of project so i
-                            can make your make your tech Dreams comme through...
-                        </p>
+                    <p class="content">
+                        I am a FullStack Developer, Content Creator and Designer.
+                        Currently studying at IUT University of Douala,
+                        majoring in Computer Engineering. With my skills, I aim to offer
+                        the best of me on each project so I can make your tech dreams come true.
+                    </p>
+                    <!-- Two CTA Buttons -->
+                    <div class="hero-btns">
+                        <a href="#contact" class="contact-btn">Contact Me</a>
+                        <a href="#project" class="contact-btn outline-btn">View Work</a>
                     </div>
                 </div>
-                <div class="img-container">
-                    <img class="svg-img" src="images/kevin.png" alt="pic">
+                <div class="img-container reveal">
+                    <img class="svg-img" src="images/kevin.png" alt="Kevin's profile picture">
                 </div>
-            </div>
-            <div class="contact">
-                <a href="#contact" class="contact-btn">Contact Us</a>
             </div>
         </div>
-    </div>
 
-<!--About Section -->
-
-    <div id="about" class="about">
-        <div class="about-container">
-            <h1>About Me</h1>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="images/undraw_deep-work_muov.svg"
-                         alt="pic">
+        <!-- ======================== ABOUT SECTION ======================== -->
+        <section id="about" class="about">
+            <div class="about-container reveal">
+                <h1>About Me</h1>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="images/undraw_deep-work_muov.svg" alt="About illustration">
+                    </div>
+                    <p class="abt-text">
+                        I am a video game enthusiast who became curious about how games work under the hood.
+                        That curiosity led me to discover programming and eventually web development.
+                        I noticed the potential of websites and applications — a real game changer for those
+                        who master them. I'm currently a web developer proficient in 5+ languages,
+                        a UI/UX Designer who uses Figma to create great user interfaces that capture
+                        users' attention, and a passionate content creator who loves what I do.
+                    </p>
                 </div>
-
-                <p class="abt-text">I am a Video game Passionate, in asking my self how it works under the hoods<br>
-                    i discovered it was possible codes writing with Computer. on learning, i discover web development.<br>
-                    i noticed the potentials of the websites and applications which could be a real game changer of those<br>
-                    who can master it.Actually i'm a web developer with more 5 languages master ,<br> a UI/UE Designer
-                    with the use of Figma i can Create greate users interface which can capture users <br> and a content Creator
-                    passionate of what i do.
-
-                </p>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!--Services Section-->
-    <section id="service">
-        <h1>Services</h1>
-        <div class="service-container">
+        <!-- ======================== SERVICES SECTION ======================== -->
+        <section id="service">
+            <h1 class="reveal">Services</h1>
+            <div class="service-container">
+                <div class="service-content">
 
-            <div class="service-content">
+                    <div class="card reveal">
+                        <div class="card-info">
+                            <i class="fa-solid fa-laptop-code icon"></i>
+                            <h2>Web Development</h2>
+                            <p>
+                                I build responsive, fast and modern websites from scratch.
+                                Using HTML, CSS and JavaScript, I craft pixel-perfect interfaces
+                                that work seamlessly across all devices and screen sizes.
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="card">
-                    <div class="card-info">
-                        <i class="fa-solid fa-laptop-code icon"></i>
-                        <h2>web Development</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Asperiores consequatur, delectus ducimus facilis id in libero minus odio officia,
-                            omnis possimus ratione suscipit vel voluptatibus.
+                    <div class="card reveal">
+                        <div class="card-info">
+                            <i class="fa-solid fa-database icon"></i>
+                            <h2>Backend Development</h2>
+                            <p>
+                                I develop robust server-side solutions using PHP, Java and Python.
+                                From RESTful APIs to database architecture, I ensure your application
+                                runs efficiently, securely, and scales with your needs.
+                            </p>
+                        </div>
+                    </div>
 
-                        </p>
+                    <div class="card reveal">
+                        <div class="card-info">
+                            <i class="fa-solid fa-photo-film icon"></i>
+                            <h2>Graphic Design</h2>
+                            <p>
+                                I help brands and individuals communicate clearly and creatively
+                                through strong visual design. My goal is to turn ideas into impactful
+                                visuals that attract attention, build trust and leave a lasting impression.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== SKILLS SECTION ======================== -->
+        <section class="skills" id="skill">
+            <div class="skill-container">
+                <h2 class="reveal">SKILLS</h2>
+                <div class="skill-content">
+
+                    <div class="skill-title reveal">
+                        <h3>HTML : <span>90%</span></h3>
+                        <div class="progress-bar">
+                            <div class="progress stage-4" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-title reveal">
+                        <h3>CSS : <span>85%</span></h3>
+                        <div class="progress-bar">
+                            <div class="progress stage-3" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-title reveal">
+                        <h3>JAVASCRIPT : <span>75%</span></h3>
+                        <div class="progress-bar">
+                            <div class="progress stage-3" data-width="75"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-title reveal">
+                        <h3>PHP : <span>70%</span></h3>
+                        <div class="progress-bar">
+                            <div class="progress stage-3" data-width="70"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-title reveal">
+                        <h3>JAVA : <span>60%</span></h3>
+                        <div class="progress-bar">
+                            <div class="progress stage-2" data-width="60"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-title reveal">
+                        <h3>PYTHON : <span>60%</span></h3>
+                        <div class="progress-bar">
+                            <div class="progress stage-2" data-width="60"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== PROJECTS SECTION ======================== -->
+        <section class="project-container" id="project">
+            <h2 class="reveal"><span>My</span> Projects</h2>
+
+            <div class="project-content">
+
+                <div class="project-card reveal">
+                    <img src="images/expence1.png" alt="Expense Tracker">
+                    <div class="details">
+                        <h3>Expense Tracker</h3>
+                        <p>A fully functional Expense Tracker that calculates user expenses
+                            and provides clean, detailed summaries.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-info">
-                        <i class="fa-solid fa-database icon"></i>
-                        <h2>Backend Development</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            A aliquam aut consectetur delectus deleniti exercitationem laudantium
-                            odio odit officia quo sapiente sunt vero, voluptates voluptatibus!
-
-                        </p>
+                <div class="project-card reveal">
+                    <img src="images/todo2.png" alt="Todo List">
+                    <div class="details">
+                        <h3>Todo List</h3>
+                        <p>A Todo List with HTML, CSS and JS that sorts all tasks
+                            from uncompleted to completed.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-info">
-                        <i class="fa-solid fa-photo-film icon"></i>
-                        <h2>Graphique Designer</h2>
-                        <p>I help brands and individuals communicate clearly and creatively through strong visual design. My goal is to turn ideas into impactful visuals that attract attention, build trust, and leave a lasting impression.
-
-                        </p>
+                <div class="project-card reveal">
+                    <img src="images/recipes6.png" alt="Recipe Finder">
+                    <div class="details">
+                        <h3>Recipe Finder</h3>
+                        <p>A Recipe Finder app that connects to a free online API to
+                            query any meal entered in the search field.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
 
-            </div>
+                <div class="project-card reveal">
+                    <img src="images/userFinder5.png" alt="GitHub User Finder">
+                    <div class="details">
+                        <h3>GitHub User Finder</h3>
+                        <p>Connects to the GitHub API and fetches any matching user,
+                            rendering info in a clean and presentable form.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-card reveal">
+                    <img src="images/quiz4.png" alt="Quiz Game">
+                    <div class="details">
+                        <h3>Quiz Game</h3>
+                        <p>A Java Quiz Game where a user answers successive questions
+                            and the final score is displayed at the end.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
 
-        </div>
-    </section>
-
-    <!--Skills Section-->
-    <div class="skills" id="skill">
-
-        <div class="skill-container">
-            <h2>SKILLS</h2>
-            <div class="skill-content">
-                <div class="skill-title">
-                    <h3>HTML :</h3>
-                    <div class="progress-bar">
-                        <div class="progress stage-4"></div>
-                    </div>
-                </div>
-                <div class="skill-title">
-                    <h3>CSS :</h3>
-                    <div class="progress-bar">
-                        <div class="progress stage-3"></div>
-                    </div>
-                </div>
-                <div class="skill-title">
-                    <h3>JAVASCRIPT :</h3>
-                    <div class="progress-bar">
-                        <div class="progress stage-3"></div>
-                    </div>
-                </div>
-                <div class="skill-title">
-                    <h3>PHP :</h3>
-                    <div class="progress-bar">
-                        <div class="progress stage-3"></div>
-                    </div>
-                </div>
-                <div class="skill-title">
-                    <h3>JAVA :</h3>
-                    <div class="progress-bar">
-                        <div class="progress stage-3"></div>
-                    </div>
-                </div>
-                <div class="skill-title">
-                    <h3>PYTHON :</h3>
-                    <div class="progress-bar">
-                        <div class="progress stage-3"></div>
+                <div class="project-card reveal">
+                    <img src="images/sloteGame3.png" alt="Slot Game">
+                    <div class="details">
+                        <h3>Slot Game</h3>
+                        <p>A Slot Game that simulates a slot machine using Java's
+                            Random object for game logic.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Live</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </div>
 
-    <!-- Project Section -->
+            <button class="prev-btn" aria-label="Previous">&#8249; Prev</button>
+            <button class="next-btn" aria-label="Next">Next &#8250;</button>
+            <!-- Dots injected by JS -->
+            <div class="carousel-dots"></div>
+        </section>
 
-    <div class="project-container" id="project">
-        <h2><span>My</span> Projects</h2>
-
-        <div class="project-content">
-            <div class="project-card">
-                <img src="images/expence1.png" alt="project1">
-                <div class="details">
-                    <h3>Expence Tracker</h3>
-                    <p>Fully functional Expence Tracker that Calculayes users Expence 
-                        and provide clean and nice looking details....</p>
-                </div>
+        <!-- ======================== CONTACT SECTION ======================== -->
+        <section class="form-container" id="contact">
+            <div class="contact-head reveal">
+                <h2>Contact</h2>
+                <p>Fill in the form to get in touch</p>
             </div>
-             <div class="project-card">
-                <img src="images/todo2.png" alt="project2">
-                <div class="details">
-                    <h3>Todo list</h3>
-                    <p>A Todo list with Html, css and js, it sorts all available tasks from uncompleted to completes tasks</p>
-                </div>
-            </div>
-
-             <div class="project-card">
-                <img src="images/recipes6.png" alt="project6">
-                <div class="details">
-                    <h3>Recipe Find</h3>
-                    <p>Recipe finder app Connects tu an online Free Api to query out any match
-                         meal enterd in the Search Field.
-
-                        </p>
-                </div>  
-            </div>
-
-
-            <div class="project-card">
-                <img src="images/userFinder5.png" alt="project5">
-                <div class="details">
-                    <h3>Githup Users Finder</h3>
-                    <p>Githup Users Finder Connects to Githup api and Fetch any matching user input Enter by A user
-             and Render the informations in a clean and nice looking form</p>
-                </div> 
-            </div>
-
-            
-            <div class="project-card">
-                <img src="images/quiz4.png" alt="project4">
-                <div class="details">
-                    <h3>Quize Game</h3>
-                    <p>A Java Quize game in Which a user Answers to successive Questions and the
-                        Total is  Rendered at the End of the Quize</p>
-                </div> 
-            </div>
-
-
-            
-            <div class="project-card">
-                <img src="images/sloteGame3.png" alt="project3">
-                <div class="details">
-                    <h3>Slote Game</h3>
-                    <p>Slote game simulate Sloting machine with the use of java random      object</p>
-                </div> 
-            </div>
-
-            
-
-
-        </div>
-
-        <button class="prev-btn">prev</button>
-        <button class="next-btn">next</button>
-    </div>
-
-
-
-
-    <!-- Contact Section -->
-
-    <div class="form-container" id="contact">
-        <div class="contact-head">
-            <h2 class="">Contact</h2>
-            <p>Fill in the Form to Contact us</p>
-        </div>
-            <form action="">
+            <form action="#" method="POST" class="reveal">
                 <div class="field">
                     <i class="fa-solid fa-envelope icon"></i>
-                    <input type="text" placeholder="Email">
+                    <input type="email" name="email" placeholder="Your Email" required>
                 </div>
-
                 <div class="field">
                     <i class="fa-solid fa-tag icon"></i>
-                    <input type="text" placeholder="Subject">
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
-
                 <div class="field">
                     <i class="fa-solid fa-message icon"></i>
-                    <textarea cols="30" rows="10">Your Message</textarea>
+                    <textarea cols="30" rows="10" name="message"
+                              placeholder="Your Message" required></textarea>
                 </div>
-
                 <div class="btn-field">
-                    <button class="submit-btn">Send Message     <i class="fa-solid fa-paper-plane icons"></i>
-                    </button>
+                    <a href="#" class="submit-btn">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </a>
                 </div>
             </form>
-        
-        
-    </div>
+        </section>
 
+        <a href="https://wa.me/237693067692"
+   class="dl-btn"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact us on WhatsApp">
 
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 48 48"
+         aria-hidden="true">
+        <!-- keep all your <path> elements as is -->
+              <path
+                  fill="#fff"
+                  d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"
+                ></path>
+                   <path
+                  fill="#fff"
+                  d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"
+                ></path>
+                <path
+                  fill="#cfd8dc"
+                  d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"
+                ></path>
+                <path
+                  fill="#40c351"
+                  d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"
+                ></path>
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z"
+                  clip-rule="evenodd"
+                ></path>
+    </svg>
 
+    quick Responds👇
+</a>
 
-    <!--Footer-->
-    <div class="footer_container" id="">
+        <!-- <a href="http://wa.me/237693067692" class="dl-btn"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="40"
+                height="40"
+                viewBox="0 0 48 48"
+              >
+              
+             
+              </svg>
+              Contactez nous sur WhatsApp</a
+            > -->
+    </main>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer_container">
         <div class="footer_links">
             <div class="footer_links_wrapper">
                 <div class="footer_link_items">
-                    <h2>About Us</h2>
-                    <a href="#sign_up">How it Works</a>
-                    <a href="#">Testimonials</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Investment</a>
-                    <a href="#">Terms of Service</a>
+                    <h2>Navigation</h2>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#service">Services</a>
+                    <a href="#skill">Skills</a>
                 </div>
                 <div class="footer_link_items">
-                    <h2>Contact Us</h2>
-                    <a href="#">Contact</a>
-                    <a href="#">Support</a>
-                    <a href="#">Destinations</a>
-                    <a href="#">Sponsorships</a>
+                    <h2>Contact</h2>
+                    <a href="#contact">Get In Touch</a>
+                    <a href="mailto:kevin@example.com">Email Me</a>
+                    <a href="#project">My Projects</a>
+                    <a href="#">Download CV</a>
                 </div>
             </div>
             <div class="footer_links_wrapper">
                 <div class="footer_link_items">
-                    <h2>Videos </h2>
-                    <a href="#">Submit Videos</a>
-                    <a href="#">Ambassadors</a>
-                    <a href="#">Agency</a>
-                    <a href="#">Influencer</a>
+                    <h2>Projects</h2>
+                    <a href="#">Expense Tracker</a>
+                    <a href="#">Todo List</a>
+                    <a href="#">Recipe Finder</a>
+                    <a href="#">GitHub Finder</a>
                 </div>
                 <div class="footer_link_items">
-                    <h2>Social Medias</h2>
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Youtube</a>
-                    <a href="#">Twitter</a>
+                    <h2>Social Media</h2>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">YouTube</a>
+                    <a href="#" target="_blank">Twitter</a>
                 </div>
             </div>
         </div>
+
         <div class="social_media">
             <div class="social_media-wrap">
-
                 <div class="footer_logo">
-                    <a href="#home" id="footer_logo"> <i class="fa-solid fa-code"></i>Enka-Dev</a>
+                    <a href="#home" id="footer_logo">
+                        <i class="fa-solid fa-code"></i> Enka-Dev
+                    </a>
                 </div>
-                <p class="website_right"> &copy; Next 2025. All rights Reserved</p>
-
+                <p class="website_right">&copy; Enka-Dev 2025. All Rights Reserved</p>
                 <div class="social_icons">
-                    <a href="#" class="social_icon-link" target="_blank">
+                    <a href="#" class="social_icon-link" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook icon"></i>
                     </a>
-                    <a href="#" class="social_icon-link" target="_blank">
+                    <a href="#" class="social_icon-link" target="_blank" aria-label="Instagram">
                         <i class="fab fa-instagram icon"></i>
                     </a>
-                    <a href="#" class="social_icon-link" target="_blank">
+                    <a href="#" class="social_icon-link" target="_blank" aria-label="Twitter">
                         <i class="fab fa-twitter icon"></i>
                     </a>
-                    <a href="#" class="social_icon-link" target="_blank">
+                    <a href="#" class="social_icon-link" target="_blank" aria-label="YouTube">
                         <i class="fab fa-youtube icon"></i>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
+
+    <!-- ======================== BACK TO TOP ======================== -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
 
     <script src="js/all.min.js"></script>
     <script src="js/script.js"></script>
